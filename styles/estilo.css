@@ -1,0 +1,435 @@
+/* Estilos de palabras  */
+
+@font-face {
+    font-family: titulo;
+    src: url('../fonts/MagicSchoolTwo.ttf');
+}
+
+@font-face {
+    font-family: texto;
+    src: url('../fonts/Auzbigo.ttf');
+}
+
+/*             */
+
+body {background-color: #5f0c9e;
+    margin: 0;
+    padding: 0;}
+
+
+#container{
+            width:80%;
+            margin: auto;}
+
+html { scroll-behavior: smooth;}
+
+
+/****** Estilo para el nav************/
+
+
+nav {position: sticky;    /* Para fijar la barra arriba*/
+    top: 0;
+    z-index: 99;
+    opacity: 0,7;}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #fd8700be;
+    font-family: texto;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    }
+
+
+
+
+
+
+
+.topnav a:hover {
+    background-color: #a59e69;
+    color: black;
+    }
+    
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    }
+    
+.topnav .icon {
+    display: none;
+    }
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;}
+    }
+    
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;}
+    }
+
+
+
+                /* Estilo Foto principal*/
+
+#Hogwarts {background-image: url(../images/Fondo\ Hogwars.jpg);
+        background-size: cover;
+        background-position:15% ;
+        position: relative;
+        height: 90vh;
+        background-attachment: fixed;
+        
+    }
+
+#Hogwarts h1 {position: absolute;
+            top: 20px;
+            left: 90px;
+            font-family: titulo;
+            font-size: 3.5em;
+            
+            }
+
+#cta {position: absolute;
+        top: 150px;
+        left: 40px;
+        background-color:#DCF5BD;
+        padding: 10px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: texto;
+        font-size: 1em;}
+
+#cta:hover {background-color: #5f0c9e;
+            box-shadow: 3px 3px 3px rgb(68, 68, 68);}
+
+#Hogwarts a {color: black;}
+
+.fa-arrow-up {position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font: 1,5em;
+    border: 1px solid: white;
+    border-radius: 50%;
+    padding: 3px;
+    }
+
+
+
+
+
+
+    /*  Estilo de la introducion section  */
+
+
+
+#introduction {color: rgb(255, 255, 255);
+                padding: 10%;
+                font-family: texto;
+                font-size: 2em;
+                text-align: justify;}
+
+#introduction h1 {  color: white;
+                    font-size: 1,5em;
+                    font-family: titulo;
+                    text-align: center;
+                    margin-bottom:60px;
+                    font-size: 3em;
+                    border-top: 3px solid rgb(0, 0, 0);
+                    }
+
+#introduction p:first-letter{font-size: 2em;
+                            color: #050505;}
+
+#escudo {width:60%;
+        float:right;
+        margin:5px;
+        ;}
+
+/*      CASA 1 dos coumnas  */
+
+#casa1 {font-family: texto;
+        color: white;
+        padding: 40px 0;  /*  Espcaio del borde para dentro  */
+        margin: 100px 0;  /*  Espcaio del borde para fuera  */
+        border-top: 3px solid black;}
+
+#casa1 h1 {font-family:titulo;
+            text-align: center;
+            font-size: 5em;
+            color: #FEFE33;}
+
+#casa1 p {font-size: 2em;}
+
+#casa1 p::first-letter {font-size: 2em;
+                        color: black;}
+
+.mitad {width: 50%;  /*  Esto limita el ancho a 50%  */
+        float:left;  /* Esto hace que se pongan en pararelo  */
+        box-sizing: border-box;  /* El padding no agranda al bloque */
+    }
+
+#derecha {padding:2%;}
+
+#escudo2 {padding-top: 35%;
+        display: block;  /* Para centarr la imagen, como un bloque  */
+        margin: auto;  
+        width:50%;  /*  Paa que la imagen este responsive, debe indicarse con el widgt  */
+        }
+
+.fin-float {clear:both;}
+
+
+
+/*              EStilo Casa 2          */
+
+#casa2 {font-family: texto;
+    color: white;
+    padding: 40px 0;  /*  Espcaio del borde para dentro  */
+    margin: 100px 0;  /*  Espcaio del borde para fuera  */
+    border-top: 3px solid black;}
+
+#casa2 h1 {font-family:titulo;
+        text-align: center;
+        font-size: 5em;
+        color: #FE2712;}
+
+#casa2 p {font-size: 2em;}
+
+#casa2 p::first-letter {font-size: 2em;
+                    color: black;}
+
+.mitad {width: 50%;  /*  Esto limita el ancho a 50%  */
+    float:left;  /* Esto hace que se pongan en pararelo  */
+    box-sizing: border-box;  /* El padding no agranda al bloque */
+}
+
+#derecha {padding:2%;}
+
+#escudo3 {padding-top: 35%;
+        display: block;  /* Para centarr la imagen, como un bloque  */
+        margin: auto;  
+        width:50%;  /*  Paa que la imagen este responsive, debe indicarse con el widgt  */
+    }
+
+.fin-float {clear:both;}
+
+ /*                 Estilo casa 3           */
+
+#casa3 {font-family: texto;
+    color: white;
+    padding: 40px 0;  /*  Espcaio del borde para dentro  */
+    margin: 100px 0;  /*  Espcaio del borde para fuera  */
+    border-top: 3px solid black;}
+
+#casa3 h1 {font-family:titulo;
+        text-align: center;
+        font-size: 5em;
+        color: #7FC22E;}
+
+#casa3 p {font-size: 2em;}
+
+#casa3 p::first-letter {font-size: 2em;
+                    color: black;}
+
+.mitad {width: 50%;  /*  Esto limita el ancho a 50%  */
+    float:left;  /* Esto hace que se pongan en pararelo  */
+    box-sizing: border-box;  /* El padding no agranda al bloque */
+}
+
+#derecha {padding:2%;}
+
+#escudo4 {padding-top: 35%;
+        display: block;  /* Para centarr la imagen, como un bloque  */
+        margin: auto;  
+        width:50%;  /*  Paa que la imagen este responsive, debe indicarse con el widgt  */
+    }
+
+.fin-float {clear:both;}
+
+
+
+
+                    /*   Estilo Casa   4   */
+#casa4 {font-family: texto;
+    color: white;
+    padding: 40px 0;  /*  Espcaio del borde para dentro  */
+    margin: 100px 0;  /*  Espcaio del borde para fuera  */
+    border-top: 3px solid black;}
+                    
+#casa4 h1 {font-family:titulo;
+    text-align: center;
+    font-size: 5em;
+    color: #2E2FE3;}
+                    
+#casa4 p {font-size: 2em;}
+                    
+#casa4 p::first-letter {font-size: 2em;
+    color: black;}
+                    
+.mitad {width: 50%;  /*  Esto limita el ancho a 50%  */
+        float:left;  /* Esto hace que se pongan en pararelo  */
+        box-sizing: border-box;  /* El padding no agranda al bloque */
+        }
+                    
+#derecha {padding:2%;}
+                    
+#escudo5 {padding-top: 35%;
+        display: block;  /* Para centarr la imagen, como un bloque  */
+        margin: auto;  
+        width:50%;  /*  Paa que la imagen este responsive, debe indicarse con el widgt  */
+                        }
+                    
+.fin-float {clear:both;}
+
+
+
+                            /*   Estilo de la Galería   */
+
+#gallery h1  {font-family: titulo;
+    border-top: 3px solid black;
+            color: white;
+            font-size: 4em;
+            text-align: center;
+            margin-top: 80px;}
+
+
+.cuartos {width: 23%; /*** tamaño de columna */
+                padding: 2%;
+                float:left;/*** para ponerla en paralelo */
+                box-sizing: border-box;/** para que cuente el padding */
+                border:1px solid #a59e69;
+        }
+
+.cuartos img {width:100%; /* para que la imagen no se salga */
+                    opacity:0.5;
+                    }
+
+.cuartos img:hover {opacity:1;}
+
+.cuartos h2 {color:white;
+            font-family:texto;
+            text-align:center;}
+
+
+
+
+/********** estilo para hacer iframe responsive *********/
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+  /* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+/********** estilo de footer **********************/
+
+footer {background-color: #DCF5BD;
+    padding:40px 25%;
+    box-sizing:border-box;}
+
+footer img {width:20%;
+        float:left;
+        margin-right:2.5%;}
+
+footer hr {margin-top:30px;}
+
+footer .fa {
+box-sizing:border-box; /* esto es añadido */
+padding: 20px;        /* ahora cuenta el padding por dentro */
+font-size: 30px;
+width: 90px;         /* si quiero que quede igual, le sumo 40px */
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+
+footer .fa:hover {
+opacity: 0.7;
+}
+
+
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+#social { width:400px;
+    margin:auto;}
+
+
+
+
+
+                    /*  El media only  */
+
+
+@media only screen and (max-width:1000px) {
+
+    #escudo, .mitad {width:100%;}
+    #casa1 {width: 100%;}
+    #escudo {margin:0;}
+    #escudo2 {width: 60%;}
+    #escudo3 {width: 60%;}
+    #escudo4 {width: 60%;}
+    #escudo5 {width: 60%;}
+    .cuartos {width:40%;}
+    footer {padding:40px 10%;}
+    #social {width:200px;} /** para que las redes pasen a 2 filas */
+}
+
+
+@media only screen and (max-width:500px){
+    #container {width:100%;}
+    .cuartos {width:90%; /* para que solo quepa una card ***/
+              margin:5%} /* para que tenga hueco y quede en medio **/
+    #escudo2{width:90%;}
+    #escudo3{width 90%;}
+    #escudo4{width:90%;}
+    #escudo5{width:90%;}
+    #hogwarts {margin: 0%;}
+    footer {padding: 40px 5%;}
+    }
